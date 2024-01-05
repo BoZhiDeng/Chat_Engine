@@ -29,11 +29,12 @@ spring.datasource.password=yourpassword
 ##Prerequisites
 Before you begin the deployment process, ensure that you have the following prerequisites:
 1. Java Development Kit (JDK) 17 installed on the deployment server.
-2. MySQL Server running and accessible on `localhost:3306` (configurable in `application.properties`).
-3. Maven for building the application.
+2  Maven 3.9.6 installed on the deployment server.
+3. MySQL Server running and accessible on `localhost:3306` (configurable in `application.properties`).
+4. Maven for building the application.
 
 ## Using the Application:
-1. Run src\main\java\com\BZD\Chat_Engine_Demo\ChatingApplication.java to launch the application
+1. Run cmd command "mvn spring-boot:run" at root file of this project or run src\main\java\com\BZD\Chat_Engine_Demo\ChatingApplication.java with your IDE to launch the application
 After launching the application:
 1. Navigate to http://localhost:8080/register to create a new user account.
    
