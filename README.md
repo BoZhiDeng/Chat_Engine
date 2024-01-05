@@ -20,19 +20,20 @@ The `application.properties` file contains configurable settings for the databas
 
 ## Example of database configuration
 spring.datasource.url=jdbc:mysql://localhost:3306/chat_engine
-spring.datasource.username=root
+spring.datasource.username=yourusername
 spring.datasource.password=yourpassword
 
-## Server port configuration
-server.port=8080
+## Default port configuration
+8080
 
-## Before Start:
-1. Ensure you have Java 17 installed on your machine.
-2. A MySQL instance should be up and running on `localhost:3306` (configurable in `application.properties`).
-3. Setup MySQL database configuration in application.properties
+##Prerequisites
+Before you begin the deployment process, ensure that you have the following prerequisites:
+1. Java Development Kit (JDK) 17 installed on the deployment server.
+2. MySQL Server running and accessible on `localhost:3306` (configurable in `application.properties`).
+3. Maven for building the application.
 
 ## Using the Application:
-Run ChatingApplication.java to launching the application
+Run ChatingApplication.java to launch the application
 After launching the application:
 Navigate to http://localhost:8080/register to create a new user account.
 Once registered, go to http://localhost:8080/login to log in to the chat application.
