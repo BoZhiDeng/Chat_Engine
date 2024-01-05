@@ -60,7 +60,7 @@ Change password or username:
    
 <img width="291" alt="image" src="https://github.com/BoZhiDeng/Chat_Engine/assets/106386075/fedb3f37-32fb-46dd-87d4-0ba3f1166eaf">
 
-<img width="220" alt="image" src="https://github.com/BoZhiDeng/Chat_Engine/assets/106386075/3a19392a-be1e-44a7-ad5a-5d2c79c2fd7a">
+<img width="291" alt="image" src="https://github.com/BoZhiDeng/Chat_Engine/assets/106386075/3a19392a-be1e-44a7-ad5a-5d2c79c2fd7a">
 
 ## Customization
 You can customize the server's IP address and port in the application.properties file if you want to run the application on a different server or port.
