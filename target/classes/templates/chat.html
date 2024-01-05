@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot WebSocket Chat Application</title>
+    <link rel="stylesheet" th:href="@{/css/chat.css}" />
+</head>
+
+<body>
+    <noscript>
+        <h2>Browser does not support Javascript</h2>
+    </noscript>
+    <div id="update-options-menu" class="hidden">
+        <ul>
+            <li id="update-username-option">Update Username</li>
+            <li id="update-password-option">Update Password</li>
+        </ul>
+    </div>
+
+    <div id="username" style="display: none;" th:data-username="${UserName}"></div>
+    <div id="email" style="display: none;" th:data-email="${Email}"></div>
+
+    <div id="username-page" class="hidden">
+        <div class="username-page-container">
+            <div class="close-button" onclick="closePage()">X</div>
+            <h1 class="title">Type your username here</h1>
+            <form id="usernameForm" th:action="@{/updateUsername}" method="post">
+                <input type="hidden" name="userId" th:value="${userId}" />
+                <div class="form-group">
+                    <input type="text" id="newUsername" name="username" placeholder="New Username" autocomplete="off"
+                        class="form-control" />
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="accent username-submit">Update Username</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="password-page" class="hidden">
+        <div class="password-page-container">
+            <div class="close-button" onclick="closePage()">X</div>
+            <h2 class="title">Type your password here</h2>
+            <form id="passwordForm" th:action="@{/updatePassword}" method="post">
+                <input type="hidden" name="userId" th:value="${userId}" />
+                <div class="form-group">
+                    <input type="password" id="newPassword" name="password" placeholder="New Password"
+                        autocomplete="off" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="accent password-submit">Update Password</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div id="chat-page">
+        <div class="chat-container">
+            <div class="chat-header">
+                <div id="user-avatar" class="user-avatar"></div>
+                <h3>Chat Engin</h3>
+            </div>
+            <div class="connecting">
+                Connecting...
+            </div>
+            <ul id="messageArea">
+
+            </ul>
+            <form id="messageForm" name="messageForm">
+                <div class="form-group">
+                    <div class="input-group clearfix">
+                        <input type="text" id="message" placeholder="Type a message..." autocomplete="off"
+                            class="form-control" />
+                        <button type="submit" class="primary">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script th:src="@{/js/chat.js}"></script>
+</body>
+
+</html>
