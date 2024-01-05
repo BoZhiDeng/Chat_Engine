@@ -33,11 +33,22 @@ Before you begin the deployment process, ensure that you have the following prer
 3. Maven for building the application.
 
 ## Using the Application:
-Run src\main\java\com\BZD\Chat_Engine_Demo\ChatingApplication.java to launch the application
+1. Run src\main\java\com\BZD\Chat_Engine_Demo\ChatingApplication.java to launch the application
 After launching the application:
-Navigate to http://localhost:8080/register to create a new user account.
-Once registered, go to http://localhost:8080/login to log in to the chat application.
-After logging in, you will be directed to the chat interface where you can start messaging other users in real-time.
+1. Navigate to http://localhost:8080/register to create a new user account.
+<img width="541" alt="image" src="https://github.com/BoZhiDeng/Chat_Engine/assets/106386075/b280a9c9-0345-434c-8c74-e706a33bf213">
+2. Once registered, go to http://localhost:8080/login to log in to the chat application.
+<img width="541" alt="image" src="https://github.com/BoZhiDeng/Chat_Engine/assets/106386075/2aeace3b-78a2-47e2-9498-990f388b63d1">
+3. After logging in, you will be directed to the chat interface, where you can start messaging other users in real-time.
+<img width="280" alt="image" src="https://github.com/BoZhiDeng/Chat_Engine/assets/106386075/ee3824ad-4031-48e8-9ac9-12d430e154e5">
+Change password or username:
+1. Click your icon on the corner
+<img width="280" alt="image" src="https://github.com/BoZhiDeng/Chat_Engine/assets/106386075/6b35d17c-93ed-45d2-a00a-c32d79299241">
+2. Select option
+<img width="100" alt="image" src="https://github.com/BoZhiDeng/Chat_Engine/assets/106386075/d303cff7-4d39-4dcd-802f-b621894075ab">
+3. Input the new password or username and submit.
+<img width="291" alt="image" src="https://github.com/BoZhiDeng/Chat_Engine/assets/106386075/fedb3f37-32fb-46dd-87d4-0ba3f1166eaf">
+<img width="220" alt="image" src="https://github.com/BoZhiDeng/Chat_Engine/assets/106386075/3a19392a-be1e-44a7-ad5a-5d2c79c2fd7a">
 
 ## Customization
 You can customize the server's IP address and port in the application.properties file if you want to run the application on a different server or port.
