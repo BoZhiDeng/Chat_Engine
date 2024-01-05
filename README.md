@@ -33,7 +33,7 @@ Before you begin the deployment process, ensure that you have the following prer
 3. Maven for building the application.
 
 ## Using the Application:
-Run ChatingApplication.java to launch the application
+Run src\main\java\com\BZD\Chat_Engine_Demo\ChatingApplication.java to launch the application
 After launching the application:
 Navigate to http://localhost:8080/register to create a new user account.
 Once registered, go to http://localhost:8080/login to log in to the chat application.
